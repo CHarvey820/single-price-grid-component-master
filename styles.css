@@ -1,0 +1,155 @@
+/* Given Stylings */
+:root{
+    /* colors */
+    --clr-cyan: hsl(179, 62%, 43%);
+    --clr-cyanOpacity: hsla(179, 62%, 43%, 0.712);
+    --clr-brightYellow: hsl(71, 73%, 54%);
+    --clr-ltGray: hsl(204, 43%, 93%);
+    --clr-grayishBlue: hsl(218, 22%, 67%);
+
+    /* font weights */
+    --fw-med: 400;
+    --fw-bold: 700;
+
+    /* fonts */
+    --font-karla: "Karla", sans-serif;
+}
+
+/* CSS reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+    background-color: var(--clr-ltGray);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--font-karla);
+  }
+
+  ul{
+    list-style-type: none;
+  }
+
+  h1{
+    color: var(--clr-cyan);
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+  }
+  
+
+  .container{
+    display: grid;
+    width: 66%;
+    max-width: 700px;
+    grid-template-rows: 220px 260px;
+    border-radius: 1rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+
+ .subscribeContainer, .listContainer{
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .introContainer{
+    grid-column: 1 / 2;
+    background-color: white;
+    border-radius: .5rem .5rem 0rem 0rem;
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .introContainer h3{
+    color: var(--clr-brightYellow);
+    font-size: 1.25rem;
+    margin-bottom: .75rem;
+  }
+
+  .introContainer p{
+    color: var(--clr-grayishBlue);
+    line-height: 1.5;
+    font-size: 1.10rem;
+  }
+
+  .bottomContainer{
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--clr-ltGray);
+    
+  }
+
+  .subscribeContainer {
+    background-color: var(--clr-cyan);
+    border-radius: 0rem 0rem 0rem .5rem;
+  }
+
+  .subscribeContainer h3{
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+  }
+
+  .listContainer{
+    grid-column: 2 / 3;
+    background-color: var(--clr-cyanOpacity);
+    border-radius: 0rem 0rem .5rem 0rem;
+  }
+
+  .listContainer h3{
+    font-weight: var(--fw-bold);
+    margin-bottom: 1rem;
+  }
+
+  .listContainer ul{
+    line-height: 1.5;
+    font-size: .9rem;
+  }
+
+  .pricing{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: .5rem;
+  }
+
+  .pricing h2{
+    font-size: 2rem;
+  }
+
+  .pricing p{
+    opacity: 60%;
+  }
+
+  .signUpBtn{
+    background-color: var(--clr-brightYellow);
+    padding: 1rem;
+    text-align: center;
+    border-radius: .5rem;
+    font-weight: var(--fw-bold);
+    margin-top: 2rem;
+
+    cursor: pointer;
+  }
+
+  .signUpBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+
+/* pre-included attribution css moved from index <style> */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  }
