@@ -48,7 +48,6 @@ main {
     margin-bottom: 1.5rem;
   }
   
-
   .container{
     display: grid;
     width: 66%;
@@ -113,6 +112,7 @@ main {
   .listContainer ul{
     line-height: 1.5;
     font-size: .9rem;
+    opacity: 90%;
   }
 
   .pricing{
@@ -153,3 +153,43 @@ main {
   .attribution a {
     color: hsl(228, 45%, 44%);
   }
+
+
+  /* non-mobile settings */
+@media (max-width: 984px) {
+
+    .container{
+        max-width: 350px;
+    }
+
+    .container, .bottomContainer {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .introContainer h1 {
+        font-size: 1.5rem;
+    }
+
+    .introContainer h3{
+        font-size: 1.125rem;
+    }
+
+    .introContainer p {
+        font-size: .9rem;
+        line-height: 2;
+    }
+
+    .introContainer, .subscribeContainer, .listContainer{
+        padding-bottom: 1.5rem;
+    }
+
+    .subscribeContainer {
+        border-radius: 0rem;
+    }
+
+    .listContainer{
+        border-radius: 0rem 0rem .5rem .5rem;
+    }
+
+}
